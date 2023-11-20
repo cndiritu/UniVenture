@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct UniVerseApp: App {
     
+    
+    init() {
+        FirebaseApp.configure()
+        print("Configured Firebase!")
+    }
     @StateObject private var vm = LocationViewModel()
     
     var body: some Scene {

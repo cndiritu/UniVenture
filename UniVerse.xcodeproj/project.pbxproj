@@ -15,6 +15,9 @@
 		837E290A2B01C26F008FFF68 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E29092B01C26F008FFF68 /* LocationsDataService.swift */; };
 		837E290C2B058F2B008FFF68 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E290B2B058F2B008FFF68 /* LocationView.swift */; };
 		837E290E2B0591F8008FFF68 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E290D2B0591F8008FFF68 /* LocationsViewModel.swift */; };
+		FC4867022B0BD6560098E45A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4867012B0BD6560098E45A /* GoogleService-Info.plist */; };
+		FC4867052B0BD73B0098E45A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FC4867042B0BD73B0098E45A /* FirebaseAnalytics */; };
+		FC4867072B0BD73B0098E45A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC4867062B0BD73B0098E45A /* FirebaseAnalyticsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,7 @@
 		837E29092B01C26F008FFF68 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		837E290B2B058F2B008FFF68 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		837E290D2B0591F8008FFF68 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		FC4867012B0BD6560098E45A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4867072B0BD73B0098E45A /* FirebaseAnalyticsSwift in Frameworks */,
+				FC4867052B0BD73B0098E45A /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,7 @@
 			children = (
 				837E28F02B01BCEA008FFF68 /* UniVerseApp.swift */,
 				837E28F22B01BCEA008FFF68 /* ContentView.swift */,
+				FC4867012B0BD6560098E45A /* GoogleService-Info.plist */,
 				837E29082B01C243008FFF68 /* DataServices */,
 				837E29012B01C067008FFF68 /* Views */,
 				837E29052B01C0F0008FFF68 /* ViewModels */,
@@ -127,6 +134,10 @@
 			dependencies = (
 			);
 			name = UniVerse;
+			packageProductDependencies = (
+				FC4867042B0BD73B0098E45A /* FirebaseAnalytics */,
+				FC4867062B0BD73B0098E45A /* FirebaseAnalyticsSwift */,
+			);
 			productName = UniVerse;
 			productReference = 837E28ED2B01BCEA008FFF68 /* UniVerse.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 837E28E42B01BCEA008FFF68;
+			packageReferences = (
+				FC4867032B0BD73B0098E45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 837E28EE2B01BCEA008FFF68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,6 +185,7 @@
 			files = (
 				837E28FF2B01BD8E008FFF68 /* Assets.xcassets in Resources */,
 				837E28F82B01BCED008FFF68 /* Preview Assets.xcassets in Resources */,
+				FC4867022B0BD6560098E45A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +407,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC4867032B0BD73B0098E45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC4867042B0BD73B0098E45A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC4867032B0BD73B0098E45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FC4867062B0BD73B0098E45A /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC4867032B0BD73B0098E45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 837E28E52B01BCEA008FFF68 /* Project object */;
 }
