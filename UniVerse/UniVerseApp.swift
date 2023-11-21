@@ -11,11 +11,8 @@ import Firebase
 @main
 struct UniVerseApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    init() {
-        FirebaseApp.configure()
-        print("Configured Firebase!")
-    }
     @StateObject private var vm = LocationViewModel()
     
     var body: some Scene {
@@ -23,5 +20,15 @@ struct UniVerseApp: App {
             LocationView()
                 .environmentObject(vm)
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        print("Configured Firebase!")
+
+        return true
     }
 }
