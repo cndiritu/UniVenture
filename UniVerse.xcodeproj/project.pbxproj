@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E15FAE72B150DDD007C6567 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E15FAE62B150DDD007C6567 /* FirebaseFirestore */; };
+		1E4C28FD2B1FA4A600FBA9F3 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */; };
 		1EF0F02D2B18FE0D0036D223 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */; };
 		837E28F12B01BCEA008FFF68 /* UniVerseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E28F02B01BCEA008FFF68 /* UniVerseApp.swift */; };
 		837E28F32B01BCEA008FFF68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E28F22B01BCEA008FFF68 /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		837E28ED2B01BCEA008FFF68 /* UniVerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E28F02B01BCEA008FFF68 /* UniVerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniVerseApp.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				837E290B2B058F2B008FFF68 /* LocationView.swift */,
 				1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */,
+				1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				1EF0F02D2B18FE0D0036D223 /* LocationListView.swift in Sources */,
 				837E290E2B0591F8008FFF68 /* LocationsViewModel.swift in Sources */,
 				837E28F32B01BCEA008FFF68 /* ContentView.swift in Sources */,
+				1E4C28FD2B1FA4A600FBA9F3 /* LocationPreviewView.swift in Sources */,
 				837E290C2B058F2B008FFF68 /* LocationView.swift in Sources */,
 				FCE138692B0D341B006CA1E3 /* FirebaseService.swift in Sources */,
 				837E29072B01C151008FFF68 /* Location.swift in Sources */,
