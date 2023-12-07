@@ -17,7 +17,7 @@ struct LocationView: View {
     
     var body: some View {
         ZStack{
-           // Map(coordinateRegion: $vm.mapRegion)
+           
            mapLayer
                 .ignoresSafeArea()
             
@@ -30,7 +30,9 @@ struct LocationView: View {
                 locationsPreviewStack
                 
             }
-            
+        }
+        .sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
+            LocationDetailView(location: location)
         }
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E12459E2B223AEF001F6E4E /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12459D2B223AEF001F6E4E /* LocationMapAnnotationView.swift */; };
+		1E1245A02B223E65001F6E4E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12459F2B223E65001F6E4E /* LocationDetailView.swift */; };
 		1E15FAE72B150DDD007C6567 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E15FAE62B150DDD007C6567 /* FirebaseFirestore */; };
 		1E4C28FD2B1FA4A600FBA9F3 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */; };
 		1EF0F02D2B18FE0D0036D223 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1E12459D2B223AEF001F6E4E /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		1E12459F2B223E65001F6E4E /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		837E28ED2B01BCEA008FFF68 /* UniVerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				1EF0F02C2B18FE0D0036D223 /* LocationListView.swift */,
 				1E4C28FC2B1FA4A600FBA9F3 /* LocationPreviewView.swift */,
 				1E12459D2B223AEF001F6E4E /* LocationMapAnnotationView.swift */,
+				1E12459F2B223E65001F6E4E /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				837E290A2B01C26F008FFF68 /* LocationsDataService.swift in Sources */,
 				1E12459E2B223AEF001F6E4E /* LocationMapAnnotationView.swift in Sources */,
+				1E1245A02B223E65001F6E4E /* LocationDetailView.swift in Sources */,
 				1EF0F02D2B18FE0D0036D223 /* LocationListView.swift in Sources */,
 				837E290E2B0591F8008FFF68 /* LocationsViewModel.swift in Sources */,
 				837E28F32B01BCEA008FFF68 /* ContentView.swift in Sources */,
